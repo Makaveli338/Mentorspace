@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Mochiy+Pop+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import 'tailwindcss';
+
+/* Preserve the ported Material Design palette / fonts from the v3 JS config. */
+@config '../../tailwind.config.cjs';
+
+/* ---------------------------------------------------------------------------
+   Custom styles ported verbatim from the original MentorSpace index.html
+   <style> block. These are the bits Tailwind utilities can't express on their
+   own (icon font settings, the hero gradient, the "leaf" bullet, scrollbar).
+--------------------------------------------------------------------------- */
+
+/* Smooth-scroll for in-page hash navigation (e.g. footer Quick Links).
+   scroll-padding-top keeps a target from hiding under the header if it ever
+   becomes sticky/fixed. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 69, 13, 0.9) 0%,
+    rgba(0, 69, 13, 0.7) 30%,
+    rgba(0, 69, 13, 0) 100%
+  );
+}
+
+.mochiy {
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+
+/* Renders an "eco" (leaf) Material icon before each mission list item. */
+.leaf-bullet::before {
+  content: 'eco';
+  font-family: 'Material Symbols Outlined';
+  font-size: 18px;
+  color: #00450d;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00450d;
+  border-radius: 10px;
+}
+
+/* Button Components */
+.primary-btn {
+  @apply bg-primary cursor-pointer px-7.5 py-4 rounded-lg font-['Inter'] font-semibold hover:bg-primary/70 transition-colors text-white;
+}
+
+.rounded-primary-btn {
+  @apply bg-[#166534] py-2.5 cursor-pointer rounded-2xl font-['Inter'] font-semibold hover:bg-emerald-700  transition-colors text-white w-full;
+}
+
+.secondary-btn {
+  @apply bg-[#FFFFFF14] py-2.5 cursor-pointer rounded-2xl font-['Inter'] font-semibold hover:bg-white/10 transition-colors text-white w-full;
+}
+.outlined-btn {
+  @apply border border-primary bg-[#EAFAF1] px-7.5 cursor-pointer py-4 rounded-lg font-['Inter'] font-semibold hover:bg-white/10 transition-colors text-primary;
+}
+
+.primary-badge{
+  @apply w-fit rounded-full text-xs font-bold px-4 py-1.5 border border-[#14532D4D] bg-[#14532D1A] leading-4 text-primary uppercase
+}
+
+/* CTA Button Variants */
+.cta-secondary-btn {
+  @apply bg-secondary-container text-on-secondary-container px-5 py-6 rounded-xl font-['Playfair_Display'] text-[24px] leading-8 font-semibold shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-[4px];
+}
+
+.cta-outlined-btn {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 text-white px-5 py-6 rounded-xl font-['Inter'] text-[14px] font-medium hover:bg-white/20 transition-all;
+}
+
+.section{
+  @apply max-w-7xl mx-auto px-6 lg:px-0
+}
+/* Anchor targets sit below the sticky header when jumped to via the nav. */
+#home,
+#about-us,
+#our-programs,
+#impact,
+#get-involved {
+  scroll-margin-top: 88px;
+}
