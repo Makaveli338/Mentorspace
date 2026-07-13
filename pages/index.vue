@@ -77,7 +77,7 @@
     <!--Hero content-->
     <div
     data-aos="fade-up"
-      class="flex flex-col gap-4 w-full mx-auto max-w-166 text-center items-center px-6 mt-10 z-30"
+      class="flex flex-col gap-4 w-full mx-auto max-w-200 text-center items-center px-6 mt-10 z-30"
     >
       <span class="primary-badge"> Community-Based Org </span>
 
@@ -85,7 +85,7 @@
         Empowering Youths. Sustaining Communities. Shaping the Future.
       </p>
 
-      <p class="text-[#323B49] text-base sm:text-lg leading-7 sm:leading-7.5">
+      <p class="text-[#323B49] text-base sm:text-lg leading-7 sm:leading-7.5 max-w-150">
         Mentorspace equips communities with mentorship, digital skills, green
         economy training, sustainable livelihoods, and climate-smart solutions
         for long-term transformation.
@@ -174,7 +174,7 @@
         class="border rounded-3xl p-6 flex gap-4 border-[#E7E5E4] cursor-pointer hover:border-[#14532D4D]"
       >
         <div
-          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px]"
+          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px] shrink-0 shrink-0"
         >
           <svg
             width="24"
@@ -218,7 +218,7 @@
         class="border rounded-3xl p-6 flex gap-4 border-[#E7E5E4] cursor-pointer hover:border-[#14532D4D]"
       >
         <div
-          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px]"
+          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px] shrink-0"
         >
           <svg
             width="24"
@@ -262,7 +262,7 @@
         class="border rounded-3xl p-6 flex gap-4 border-[#E7E5E4] cursor-pointer hover:border-[#14532D4D]"
       >
         <div
-          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px]"
+          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px] shrink-0"
         >
           <svg
             width="24"
@@ -308,7 +308,7 @@
         class="border rounded-3xl p-6 flex gap-4 border-[#E7E5E4] cursor-pointer hover:border-[#14532D4D]"
       >
         <div
-          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px]"
+          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px] shrink-0"
         >
           <svg
             width="24"
@@ -352,7 +352,7 @@
         class="border rounded-3xl p-6 flex gap-4 border-[#E7E5E4] cursor-pointer hover:border-[#14532D4D]"
       >
         <div
-          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px]"
+          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px] shrink-0"
         >
           <svg
             width="24"
@@ -396,7 +396,7 @@
         class="border rounded-3xl p-6 flex gap-4 border-[#E7E5E4] cursor-pointer hover:border-[#14532D4D]"
       >
         <div
-          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px]"
+          class="size-12 flex items-center justify-center bg-[#FFFBEB] rounded-[14px] shrink-0"
         >
           <svg
             width="24"
