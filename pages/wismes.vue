@@ -295,7 +295,7 @@
         <!-- Right Container-->
         <div data-aos="fade-left" class="flex gap-2 items-center h-full">
           <img src="conservation-1.png" alt="tree planting" />
-          <img src="conservation-2.png" alt="Forest"   />
+          <img src="conservation-2.png" alt="Forest" class="hidden sm:block"  />
           <img src="conservation-3.png" alt="ocean" class="hidden sm:block" />
         </div>
       </div>
