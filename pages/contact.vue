@@ -101,10 +101,15 @@
             />
           </label>
 
-          <button type="submit" class="primary-btn w-full">Send Message</button>
+          <button type="submit" class="primary-btn w-full" :disabled="sending">
+            {{ sending ? 'Sending…' : 'Send Message' }}
+          </button>
 
           <p v-if="submitted" class="text-sm text-primary font-medium text-center">
-            Thanks, {{ form.name || 'friend' }}! Your message is ready to send.
+            Thanks! Your message has been sent — we'll be in touch soon.
+          </p>
+          <p v-if="errorMsg" class="text-sm text-red-600 font-medium text-center">
+            {{ errorMsg }}
           </p>
         </form>
       </div>
@@ -127,7 +132,7 @@ useSeoMeta({
 })
 
 const contactInfo = [
-  { icon: 'mail', label: 'Email', value: 'info@mentorspace.org', href: 'mailto:info@mentorspace.org' },
+  { icon: 'mail', label: 'Email', value: 'info@mentorspacekenya.org', href: 'mailto:info@mentorspacekenya.org' },
   { icon: 'phone', label: 'Phone', value: '+254 795 199 081', href: 'tel:+254795199081' },
   { icon: 'location_on', label: 'Location', value: 'Rainbow Towers, 11th Floor Muthithi Rd, Westlands ', href: 'https://www.google.com/maps/place/Rainbow+Tower/@-1.2661999,36.8045116,16z/data=!3m1!4b1!4m6!3m5!1s0x182f173e4f773017:0x6ea952c2753d2498!8m2!3d-1.2662053!4d36.8070865!16s%2Fg%2F11c0pv8768!5m2!1e4!1e1?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D' },
 ]
@@ -140,12 +145,32 @@ const form = reactive({
 })
 
 const submitted = ref(false)
+const sending = ref(false)
+const errorMsg = ref('')
 
-function handleSubmit() {
-  // No backend yet — confirm and hand off to email.
-  submitted.value = true
-  const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`)
-  const subject = encodeURIComponent(form.subject || 'Message from MentorSpace site')
-  window.location.href = `mailto:info@mentorspace.org?subject=${subject}&body=${body}`
+async function handleSubmit() {
+  sending.value = true
+  errorMsg.value = ''
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: form.name,
+        email: form.email,
+        subject: form.subject,
+        message: form.message,
+      },
+    })
+    submitted.value = true
+    form.name = ''
+    form.email = ''
+    form.subject = ''
+    form.message = ''
+  } catch (err: any) {
+    errorMsg.value =
+      err?.data?.statusMessage || 'Something went wrong sending your message. Please try again.'
+  } finally {
+    sending.value = false
+  }
 }
 </script>

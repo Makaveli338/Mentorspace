@@ -15,6 +15,23 @@
       </div>
     </section>
 
+    <!-- Service-not-live notice -->
+    <div class="px-4 sm:px-0">
+      <div
+        role="status"
+        class="max-w-2xl mx-auto mt-16 -mb-8 flex items-start gap-3 rounded-md border border-amber-300 bg-amber-50 p-4 text-amber-900"
+      >
+        <span class="material-symbols-outlined text-xl leading-none">info</span>
+        <p class="text-sm leading-6">
+          <span class="font-semibold">Donations aren't live yet.</span>
+          Our online giving service is still being set up, so payments can't be
+          processed at the moment. Please check back soon — in the meantime,
+          <NuxtLink to="/contact" class="underline font-medium">reach out to us</NuxtLink>
+          if you'd like to support our work directly.
+        </p>
+      </div>
+    </div>
+
     <!-- Body -->
     <div class="px-4 sm:px-0">
       <section

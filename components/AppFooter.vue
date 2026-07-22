@@ -215,8 +215,8 @@
 
             <a
               class="cursor-pointer relative inline-block no-underline w-fit after:content-[''] after:absolute after:w-full after:scale-x-0 after:rounded after:h-[0.05em] after:bottom-0 after:left-0 after:bg-current after:origin-bottom-right after:transition-transform after:duration-200 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left"
-              href="mailto:info@mentorspace.org"
-              >info@mentorspace.org</a
+              href="mailto:info@mentorspacekenya.org"
+              >info@mentorspacekenya.org</a
             >
           </div>
 
