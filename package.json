@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "NODE_OPTIONS='--max-old-space-size=10000' nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "highcharts": "^13.0.0"
   }
 }

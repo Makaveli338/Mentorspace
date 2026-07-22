@@ -1,18 +1,14 @@
 <template>
   <main class="bg-[#FAFAF9]">
     <!-- Hero -->
-    <section class="bg-[#020A04] py-20">
-      <div class="section px-6 text-center space-y-5" data-aos="fade-up">
-        <span
-            class="w-fit rounded-full text-xs font-bold px-4 py-1.5 border border-[#05DF724D] bg-[#05DF721A] leading-4 text-[#7BF1A8] uppercase"
-            >Get in Touch</span
-          >
-        <h1 class="text-white mochiy text-4xl sm:text-5xl font-bold mt-4">
-          Let's Build Impact Together
-        </h1>
-        <p class="max-w-2xl mx-auto text-[#DCFCE799] text-base sm:text-lg">
-          Whether you want to mentor, partner, volunteer, or simply learn more
-          about our work across Africa — we'd love to hear from you.
+    <section class="bg-[url('/about-hero.png')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5">
+     <div class="section text-white" data-aos="fade-right">
+        <p class="text-xs tracking-[2px] uppercase mono">Get in touch</p>
+        <p class="text-5xl mt-2.5 playfair font-bold leading-14">
+         Contact Us
+        </p>
+        <p class="text-lg text-[#FFFFFFCC] mt-3">
+          Reach out for enquiries, partnerships, media or general information.
         </p>
       </div>
     </section>
@@ -20,7 +16,7 @@
     <!-- Body -->
     <section class="section px-6 py-16 grid gap-10 lg:grid-cols-2">
       <!-- Contact info -->
-      <div class="space-y-6" data-aos="fade-up">
+      <div class="space-y-6" data-aos="fade-right">
         <div>
           <h2 class="font-['Playfair_Display'] text-primary text-3xl font-bold">
             Reach Out
@@ -37,6 +33,8 @@
             v-for="item in contactInfo"
             :key="item.label"
             :href="item.href || undefined"
+            :target="item.href?.startsWith('http') ? '_blank' : undefined"
+            :rel="item.href?.startsWith('http') ? 'noopener noreferrer' : undefined"
             class="group flex items-start gap-4 rounded-2xl border border-[#14532D1A] bg-white p-5 transition-shadow hover:shadow-md"
           >
             <span
@@ -54,7 +52,7 @@
       <!-- Form -->
       <div
         class="rounded-2xl border border-[#14532D1A] bg-white p-7 sm:p-9 shadow-sm"
-        data-aos="fade-up"
+        data-aos="fade-left"
         data-aos-delay="100"
       >
         <form class="space-y-5" @submit.prevent="handleSubmit">
@@ -115,6 +113,9 @@
 </template>
 
 <script setup lang="ts">
+import { useSeoMeta } from "nuxt/app";
+import { reactive, ref } from "vue";
+
 useSeoMeta({
   title: 'Contact | MentorSpace',
   description:
@@ -128,7 +129,7 @@ useSeoMeta({
 const contactInfo = [
   { icon: 'mail', label: 'Email', value: 'info@mentorspace.org', href: 'mailto:info@mentorspace.org' },
   { icon: 'phone', label: 'Phone', value: '+254 795 199 081', href: 'tel:+254795199081' },
-  { icon: 'location_on', label: 'Location', value: 'Rainbow Towers, 11th Floor Muthithi Rd, Westlands ' },
+  { icon: 'location_on', label: 'Location', value: 'Rainbow Towers, 11th Floor Muthithi Rd, Westlands ', href: 'https://www.google.com/maps/place/Rainbow+Tower/@-1.2661999,36.8045116,16z/data=!3m1!4b1!4m6!3m5!1s0x182f173e4f773017:0x6ea952c2753d2498!8m2!3d-1.2662053!4d36.8070865!16s%2Fg%2F11c0pv8768!5m2!1e4!1e1?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D' },
 ]
 
 const form = reactive({

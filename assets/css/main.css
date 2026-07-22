@@ -40,7 +40,14 @@ html {
   font-optical-sizing: auto;
 }
 
+.playfair{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
 
+.mono {
+  font-family: "Google Sans Code", monospace;
+}
 
 /* Renders an "eco" (leaf) Material icon before each mission list item. */
 .leaf-bullet::before {
@@ -81,6 +88,10 @@ html {
   @apply w-fit rounded-full text-xs font-bold px-4 py-1.5 border border-[#14532D4D] bg-[#14532D1A] leading-4 text-primary uppercase
 }
 
+.secondary-badge{
+  @apply w-fit rounded-sm text-xs font-bold px-4 py-1.5 border border-[#C47A1A4D] bg-[#C47A1A26] leading-4 text-[#C47A1A] uppercase
+}
+
 /* CTA Button Variants */
 .cta-secondary-btn {
   @apply bg-secondary-container text-on-secondary-container px-5 py-6 rounded-xl font-['Playfair_Display'] text-[24px] leading-8 font-semibold shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-[4px];
@@ -92,6 +103,21 @@ html {
 
 .section{
   @apply max-w-7xl mx-auto px-6 lg:px-0
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+/* Hide the up/down spinner arrows on number inputs. */
+@utility no-spinner {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 /* Anchor targets sit below the sticky header when jumped to via the nav. */
 #home,

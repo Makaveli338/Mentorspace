@@ -15,8 +15,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     })
   })
 
-  // Re-scan on route changes.
+  // Re-scan on route changes. Client-side navigation swaps the whole page DOM,
+  // so we must rebuild AOS's element list (refreshHard), not just recalculate
+  // positions (refresh) — otherwise the new page's [data-aos] elements are never
+  // revealed and stay at opacity:0 until a full reload.
   nuxtApp.hook('page:finish', () => {
-    AOS.refresh()
+    AOS.refreshHard()
   })
 })
