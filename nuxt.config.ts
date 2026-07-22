@@ -2,15 +2,12 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
+    ssr: true,
   compatibilityDate: '2025-07-09',
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [tailwindcss()],
-    // All <img> sources are either /public absolute paths or remote URLs, so
-    // there is nothing for the bundler to resolve. Leaving Vue's default
-    // transformAssetUrls on rewrites `/foo.jpeg` into a `virtual:public?…`
-    // import that the SSR vite-node resolver fails to load (400 Bad Request).
     vue: {
       template: {
         transformAssetUrls: false,
@@ -50,7 +47,6 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: '/mentorspace-logo.svg' },
       ],
       link: [
-        // Preconnect so Google Fonts stop blocking first paint.
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {

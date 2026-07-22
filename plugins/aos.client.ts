@@ -1,3 +1,4 @@
+import { defineNuxtPlugin } from 'nuxt/app'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -8,7 +9,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     AOS.init({
       duration: 700,
       easing: 'ease-out-cubic',
-      once: true,
+      once: false,
       offset: 80,
       anchorPlacement: 'top-bottom',
       disable: () => window.matchMedia('(max-width: 640px)').matches,
@@ -23,3 +24,4 @@ export default defineNuxtPlugin((nuxtApp) => {
     AOS.refreshHard()
   })
 })
+
