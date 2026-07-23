@@ -127,3 +127,16 @@ html {
 #get-involved {
   scroll-margin-top: 88px;
 }
+
+/* AOS is disabled on phones (see plugins/aos.client.ts). AOS's stylesheet still
+   sets [data-aos] { opacity: 0 } until .aos-animate is added, and on client-side
+   route changes AOS.refreshHard() does not re-run the disable path — so freshly
+   mounted pages would stay invisible until a full reload. Force them visible. */
+@media (max-width: 640px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    pointer-events: auto !important;
+  }
+}

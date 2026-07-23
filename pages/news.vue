@@ -2,7 +2,7 @@
   <section class="">
     <!--Heading-->
     <section
-      class="bg-[#0E1C11] bg-[url('/about-hero.png')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5"
+      class="bg-[#0E1C11] bg-[url('/about-hero.webp')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5"
     >
       <div class="section text-white" data-aos="fade-right">
         <p class="text-xs tracking-[2px] uppercase mono">Latest</p>
@@ -76,7 +76,7 @@ const items = [
     category: "success-stories",
     label: "Success Stories",
     date: "June 2025",
-    image: "/success-1.png",
+    image: "/success-1.webp",
     alt: "youths",
     title: "500 Youth Graduate from Digital Skills Programme",
     excerpt:
@@ -86,7 +86,7 @@ const items = [
     category: "events",
     label: "Events",
     date: "May 2025",
-    image: "/success-2.png",
+    image: "/success-2.webp",
     alt: "programme launch",
     title: "WiSMES Programme Launch in Migori County",
     excerpt:
@@ -96,7 +96,7 @@ const items = [
     category: "blogs",
     label: "Blogs",
     date: "April 2025",
-    image: "/success-3.png",
+    image: "/success-3.webp",
     alt: "woman miner",
     title: "The Role of Women in Sustainable Mining: A Kenyan Perspective",
     excerpt:
@@ -106,7 +106,7 @@ const items = [
     category: "success-stories",
     label: "Success Stories",
     date: "March 2025",
-    image: "/success-4.png",
+    image: "/success-4.webp",
     alt: "women entrepreneurs",
     title: "From Widow to Entrepreneur: Mary's Journey",
     excerpt:
@@ -116,7 +116,7 @@ const items = [
     category: "media-features",
     label: "Media Features",
     date: "February 2025",
-    image: "/success-5.png",
+    image: "/success-5.webp",
     alt: "media feature",
     title: "MENTORSPACE Featured in National Media",
     excerpt:

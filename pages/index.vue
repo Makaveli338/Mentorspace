@@ -117,7 +117,7 @@
         <img src="/top.webp" alt="" loading="lazy" />
         <div
           class="bg-cover bg-center bg-no-repeat h-80 max-w-148 -mt-20 sm:-mt-28 flex flex-col justify-end gap-1.5 px-9 pb-13.5 rounded-b-2xl"
-          :style="{ backgroundImage: `url('/botttom.png')` }"
+          :style="{ backgroundImage: `url('/botttom.webp')` }"
         >
           <p class="text-sm font-semibold text-[#7BF1A8B2]">Our Mission</p>
           <p class="text-[#7BF1A8B2] text-xl font-medium">
@@ -170,7 +170,7 @@
 
       <!--Container for small screens-->
       <div class="space-y-2 block sm:hidden w-full">
-        <img src="top-mobile.png" alt="Children reading">
+        <img src="top-mobile.webp" alt="Children reading">
 
         <div class="bg-primary rounded-xl space-y-2 py-16 px-4">
           <p class="text-sm font-semibold text-[#7BF1A8B2]">Our Mission</p>
@@ -225,7 +225,7 @@
 
       <!-- -->
       <div class="col-span-full sm:col-span-8">
-        <img src="/impact-img.png" alt="" />
+        <img src="/impact-img.webp" alt="" loading="lazy" decoding="async" />
       </div>
 
       <!-- -->
@@ -616,7 +616,7 @@
       <!--Body-->
       <div data-aos="fade-up" class="grid gap-5 sm:grid-cols-4">
         <div class="bg-white border border-[#00000014] rounded-lg">
-        <img src="/testimony-1.png" alt="testimonial" loading="lazy" class="w-full" />
+        <img src="/testimony-1.webp" alt="testimonial" loading="lazy" class="w-full" />
 
           <div class="p-5 space-y-3.5">
             <p class="italic text-sm text-[#1A2016]">
@@ -632,7 +632,7 @@
         </div>
 
         <div class="bg-white border border-[#00000014] rounded-lg">
-          <img src="/testimony-1.png" alt="testimonial" loading="lazy" class="w-full" />
+          <img src="/testimony-1.webp" alt="testimonial" loading="lazy" class="w-full" />
 
           <div class="p-5 space-y-3.5">
             <p class="italic text-sm text-[#1A2016]">
@@ -650,7 +650,7 @@
         </div>
 
         <div class="bg-white border border-[#00000014] rounded-lg">
-          <img src="/testimony-1.png" alt="testimonial" loading="lazy" class="w-full" />
+          <img src="/testimony-1.webp" alt="testimonial" loading="lazy" class="w-full" />
 
           <div class="p-5 space-y-3.5">
             <p class="italic text-sm text-[#1A2016]">
@@ -668,7 +668,7 @@
         </div>
 
         <div class="bg-white border border-[#00000014] rounded-lg">
-          <img src="/testimony-1.png" alt="testimonial" loading="lazy" class="w-full" />
+          <img src="/testimony-1.webp" alt="testimonial" loading="lazy" class="w-full" />
 
           <div class="p-5 space-y-3.5">
             <p class="italic text-sm text-[#1A2016]">

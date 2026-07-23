@@ -49,17 +49,30 @@ export default defineNuxtConfig({
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        // Load fonts without blocking first paint: fetch as a non-applied
+        // "print" stylesheet, then swap to "all" once it arrives (onload).
+        // The <noscript> fallback keeps them working with JS disabled.
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&family=Inter:wght@500;600&display=swap',
+          media: 'print',
+          onload: "this.media='all'",
         },
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap',
+          media: 'print',
+          onload: "this.media='all'",
         },
-         {
-          rel: "icon",
-          href: "/logo-nobg.png",
+        {
+          rel: 'icon',
+          href: '/logo-nobg.webp',
+        },
+      ],
+      noscript: [
+        {
+          innerHTML:
+            '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&family=Inter:wght@500;600&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">',
         },
       ],
     },

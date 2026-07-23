@@ -2,7 +2,7 @@
   <section class="space-y-16 pb-16">
     <!--Heading-->
     <section
-      class="bg-[#0E1C11] bg-[url('/about-hero.png')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5"
+      class="bg-[#0E1C11] bg-[url('/about-hero.webp')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5"
     >
       <div class="section text-white" data-aos="fade-right">
         <p class="text-xs tracking-[2px] uppercase mono">Our Work</p>
@@ -61,7 +61,7 @@
         class="bg-white border border-[#00000014] rounded-lg overflow-hidden"
       >
         <img
-          src="/youth-empowerment.png"
+          src="/youth-empowerment.webp"
           alt="youths"
           loading="lazy"
           class="w-full"
@@ -121,7 +121,7 @@
         class="bg-white border border-[#00000014] rounded-lg overflow-hidden"
       >
         <img
-          src="/women-economic-empowerment.png"
+          src="/women-economic-empowerment.webp"
           alt="women"
           loading="lazy"
           class="w-full"
@@ -162,7 +162,7 @@
         class="bg-white border border-[#00000014] rounded-lg overflow-hidden"
       >
         <img
-          src="/environmental-conservation.png"
+          src="/environmental-conservation.webp"
           alt="environment"
           loading="lazy"
           class="w-full"
@@ -210,7 +210,7 @@
         class="bg-white border border-[#00000014] rounded-lg overflow-hidden"
       >
         <img
-          src="/agriculture.png"
+          src="/agriculture.webp"
           alt="agriculture"
           loading="lazy"
           class="w-full"
@@ -256,7 +256,7 @@
         class="bg-white border border-[#00000014] rounded-lg overflow-hidden"
       >
         <img
-          src="/digital-skills.png"
+          src="/digital-skills.webp"
           alt="digital skills"
           loading="lazy"
           class="w-full"
@@ -367,7 +367,7 @@
         class="bg-white border border-[#00000014] rounded-lg overflow-hidden"
       >
         <img
-          src="/sports-development.png"
+          src="/sports-development.webp"
           alt="sports"
           loading="lazy"
           class="w-full"
@@ -442,7 +442,7 @@
       <div
         class="bg-white border border-[#00000014] rounded-lg overflow-hidden"
       >
-        <img src="/research.png" alt="research" loading="lazy" class="w-full" />
+        <img src="/research.webp" alt="research" loading="lazy" class="w-full" />
 
         <div class="p-5">
           <div
@@ -481,7 +481,7 @@
         class="bg-white border border-[#00000014] rounded-lg overflow-hidden"
       >
         <img
-          src="/community-development.png"
+          src="/community-development.webp"
           alt="community"
           loading="lazy"
           class="w-full"

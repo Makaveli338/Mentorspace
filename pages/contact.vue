@@ -1,7 +1,7 @@
 <template>
   <main class="bg-[#FAFAF9]">
     <!-- Hero -->
-    <section class="bg-[url('/about-hero.png')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5">
+    <section class="bg-[url('/about-hero.webp')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5">
      <div class="section text-white" data-aos="fade-right">
         <p class="text-xs tracking-[2px] uppercase mono">Get in touch</p>
         <p class="text-5xl mt-2.5 playfair font-bold leading-14">

@@ -1,7 +1,7 @@
 <template>
     <!-- Hero -->
     <section
-      class="bg-[url('/about-hero.png')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5"
+      class="bg-[url('/about-hero.webp')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5"
     >
       <div class="section text-white" data-aos="fade-right">
         <p class="text-xs tracking-[2px] uppercase mono">Give</p>
@@ -26,7 +26,7 @@
           <span class="font-semibold">Donations aren't live yet.</span>
           Our online giving service is still being set up, so payments can't be
           processed at the moment. Please check back soon — in the meantime,
-          <NuxtLink to="/contact" class="underline font-medium">reach out to us</NuxtLink>
+          <NuxtLink to="/contact" class="underline font-medium hover:text-amber-950">reach out to us</NuxtLink>
           if you'd like to support our work directly.
         </p>
       </div>

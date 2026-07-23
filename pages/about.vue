@@ -1,7 +1,7 @@
 <template>
   <section class="space-y-16">
     <section
-      class="bg-[#0E1C11] bg-[url('/about-hero.png')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5"
+      class="bg-[#0E1C11] bg-[url('/about-hero.webp')] bg-cover bg-center bg-no-repeat w-full pt-20.5 pb-13.5"
     >
       <div class="section text-white" data-aos="fade-right">
         <p class="text-xs tracking-[2px] uppercase mono">About Us</p>
@@ -41,11 +41,11 @@
 
       <!--Right container-->
       <div data-aos="fade-left" class="grid">
-        <img src="/about1.png" alt="" class="w-full sm:w-176.25 max-w-none" />
+        <img src="/about1.webp" alt="" class="w-full sm:w-176.25 max-w-none" />
 
         <div class="hidden sm:flex">
-          <img src="/about2.png" alt="" />
-          <img src="/about3.png" alt="" class="-ml-15" />
+          <img src="/about2.webp" alt="" loading="lazy" decoding="async" />
+          <img src="/about3.webp" alt="" class="-ml-15" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -542,7 +542,7 @@
         <div data-aos="fade-up" class="grid sm:grid-cols-4 gap-6">
           <!-- -->
           <div class="bg-white border border-[#00000014] rounded-lg">
-            <img src="/testimony-1.png" alt="testimonial" loading="lazy" class="w-full" />
+            <img src="/testimony-1.webp" alt="testimonial" loading="lazy" class="w-full" />
 
             <div class="p-4 space-y-1">
               <p class="text-sm font-semibold leading-5">Executive Director</p>
@@ -554,7 +554,7 @@
 
           <!-- -->
           <div class="bg-white border border-[#00000014] rounded-lg">
-            <img src="/testimony-1.png" alt="testimonial" loading="lazy" class="w-full" />
+            <img src="/testimony-1.webp" alt="testimonial" loading="lazy" class="w-full" />
 
             <div class="p-4 space-y-1">
               <p class="text-sm font-semibold leading-5">Programmes Director</p>
@@ -566,7 +566,7 @@
 
            <!-- -->
           <div class="bg-white border border-[#00000014] rounded-lg">
-            <img src="/testimony-1.png" alt="testimonial" loading="lazy" class="w-full" />
+            <img src="/testimony-1.webp" alt="testimonial" loading="lazy" class="w-full" />
 
             <div class="p-4 space-y-1">
               <p class="text-sm font-semibold leading-5">Finance Director</p>
@@ -578,7 +578,7 @@
 
             <!-- -->
           <div class="bg-white border border-[#00000014] rounded-lg">
-            <img src="/testimony-1.png" alt="testimonial" loading="lazy" class="w-full" />
+            <img src="/testimony-1.webp" alt="testimonial" loading="lazy" class="w-full" />
 
             <div class="p-4 space-y-1">
               <p class="text-sm font-semibold leading-5">M&E Coordinator</p>

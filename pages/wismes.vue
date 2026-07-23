@@ -2,7 +2,7 @@
   <section>
     <!--Heading-->
     <section
-      class="bg-[#0E1C11] bg-[url('/wismes.png')] bg-cover bg-center bg-no-repeat w-full sm:pt-20.5 sm:pb-27.5 py-16"
+      class="bg-[#0E1C11] bg-[url('/wismes.webp')] bg-cover bg-center bg-no-repeat w-full sm:pt-20.5 sm:pb-27.5 py-16"
     >
       <div class="section text-white" data-aos="fade-right">
         <div class="max-w-2xl">
@@ -84,7 +84,7 @@
       </div>
 
       <div data-aos="fade-left">
-        <img src="/migori.png" alt="people of Migori" />
+        <img src="/migori.webp" alt="people of Migori" />
       </div>
     </section>
 
@@ -294,9 +294,9 @@
 
         <!-- Right Container-->
         <div data-aos="fade-left" class="flex gap-2 items-center h-full">
-          <img src="conservation-1.png" alt="tree planting" />
-          <img src="conservation-2.png" alt="Forest" class="hidden sm:block"  />
-          <img src="conservation-3.png" alt="ocean" class="hidden sm:block" />
+          <img src="conservation-1.webp" alt="tree planting" loading="lazy" decoding="async" />
+          <img src="conservation-2.webp" alt="Forest" class="hidden sm:block" loading="lazy" decoding="async" />
+          <img src="conservation-3.webp" alt="ocean" class="hidden sm:block" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>

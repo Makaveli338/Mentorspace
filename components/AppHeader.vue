@@ -2,7 +2,7 @@
   <section class="sticky top-0 z-50 bg-white! sm:px-8 sm:py-5 p-4 border-b border-[#EAECF0]">
     <div class="section flex justify-between items-center">
     <NuxtLink to="/">
-     <img src="/mentorspace-logo.png" alt="Mentorspace logo" class="w-63.75 h-10">
+     <img src="/mentorspace-logo.webp" alt="Mentorspace logo" class="w-63.75 h-10">
      </NuxtLink>
 
      <div class="lg:flex items-center gap-6 w-fit mx-auto hidden">
